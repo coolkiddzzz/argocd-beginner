@@ -5,13 +5,13 @@ metadata:
 spec:
  ingressClassName: nginx
  rules:
- - host: woohoooooo.sctp-sandbox.com.sctp-sandbox.com	
+ - host: woohoo.sctp-sandbox.com	# this points to the ELB, which will be routed to the below service
    http:
      paths:
      - backend:
          service:
            name: hello-node
            port:
-             number: 80
+             number: 3000
        path: /
        pathType: Prefix

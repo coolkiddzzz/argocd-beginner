@@ -18,4 +18,4 @@ spec:
      - name: node
        image: 255945442255.dkr.ecr.us-east-1.amazonaws.com/albert-ecr-repository:latest
        ports:
-       - containerPort: 8080
+       - containerPort: 3000
